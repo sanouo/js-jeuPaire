@@ -87,8 +87,26 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+header h1
+{
+  color: black;
+  text-align: center;
+  font-family: 'Stardos Stencil', cursive;
+}
 
+.carte
+  {
+    width: 11%;
+    height: 150px;
+    border: solid 2px black;
+  }
 
+.ligne1 , .ligne2
+  {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5em;
+  }
 
 
 
