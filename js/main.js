@@ -31,7 +31,8 @@ function comparer(element)
     setTimeout(function(){
       valeur[0].src="img/portrait.png";
       valeur[1].src="img/portrait.png";
-    }, 1000);
+    valeur=[];}, 1000);
+
   }
 
   else{
@@ -41,8 +42,5 @@ function comparer(element)
 
     }
   }
-
-
-
-
+    // valeur=[];
 }
