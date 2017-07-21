@@ -24,23 +24,19 @@ for (let i = 0; i < dos.length; i++) {
 
 function comparer(element)
 {
-  console.log(valeur);
   if(valeur[0].src != valeur[1].src){
     //retournemnt
-    console.log("pas les meme");
     setTimeout(function(){
       valeur[0].src="img/portrait.png";
       valeur[1].src="img/portrait.png";
     valeur=[];}, 1000);
-
   }
+  
 
   else{
-    //retournemeny
     nbpairOk++;
-    if (nbpairOk = 7) {
-
+    if (nbpairOk === 7) {
+      alert("Felicitation")
     }
   }
-    // valeur=[];
 }
