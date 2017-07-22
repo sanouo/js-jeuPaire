@@ -31,12 +31,17 @@ function comparer(element)
       valeur[1].src="img/portrait.png";
     valeur=[];}, 1000);
   }
-  
+else if (valeur[0].src === valeur[1].src){
+  setTimeout(function(){
+    valeur[0].src;
+    valeur[1].src;
+  valeur = [];}, 1000);
+}
 
-  else{
+
     nbpairOk++;
     if (nbpairOk === 7) {
-      alert("Felicitation")
+      alert("Felicitation");
     }
-  }
+
 }
