@@ -38,10 +38,23 @@ else if (valeur[0].src === valeur[1].src){
   valeur = [];}, 1000);
 }
 
+nbpairOk++;
+if (nbpairOk === 7) {
+  alert("Felicitation");
+}
 
-    nbpairOk++;
-    if (nbpairOk === 7) {
-      alert("Felicitation");
-    }
+}
+
+
+
+for(var position=image.length-1; position>=1; position--){
+
+	//hasard reçoit un nombre entier aléatoire entre 0 et position
+	var hasard=Math.floor(Math.random()*(position+1));
+
+	//Echange
+	var sauve=image[position];
+	image[position]=image[hasard];
+	image[hasard]=sauve;
 
 }
