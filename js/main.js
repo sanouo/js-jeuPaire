@@ -36,9 +36,10 @@ else if (valeur[0].src === valeur[1].src){
     valeur[0].src;
     valeur[1].src;
   valeur = [];}, 1000);
+  nbpairOk++;
 }
 
-nbpairOk++;
+
 if (nbpairOk === 7) {
   alert("Felicitation");
 }
