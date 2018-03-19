@@ -109,7 +109,19 @@ header h1
     margin-top: 5em;
   }
 
+#affichage , h5
+{
+  font-family: 'Stardos Stencil', cursive;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 1em;
+}
 
+#affichage
+{
+  color: red;
+  font-size: 25px;
+}
 
 
 

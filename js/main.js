@@ -3,6 +3,8 @@ var image = ["img/1.jpg","img/2.jpg","img/3.jpg","img/4.jpg","img/5.jpg","img/6.
 var compteur = 0;
 var valeur = [];
 nbpairOk=0;
+var nbrecoup= 0;
+
 
 for (let i = 0; i < dos.length; i++) {
   dos[i].addEventListener('click',function(){
@@ -17,6 +19,8 @@ for (let i = 0; i < dos.length; i++) {
       dos[i].src = image[i];
       valeur.push(this);
       comparer(this);
+      nbrecoup++;
+      document.getElementById('affichage').innerHTML = nbrecoup;
     }
   });
 }
@@ -42,6 +46,11 @@ else if (valeur[0].src === valeur[1].src){
 
 if (nbpairOk === 7) {
   alert("Felicitation");
+  alert("Votre de score est de : " + nbrecoup);
+  if (confirm("Rejouer ?")) {
+    location.reload();
+  }
+  // location.reload();
 }
 
 }
